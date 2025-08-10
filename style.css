@@ -1,0 +1,206 @@
+/* Fonts and Reset */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #FFF8DC;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #800000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
+
+/* Services Section */
+.services {
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: #800000;
+  margin-bottom: 2rem;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.service-item {
+  background-color: #FFF0F5;
+  border-radius: 15px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #20B2AA;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Contact Page Styles */
+.contact-section {
+  background-image: url('images/contact-bg.jpg'); /* Your background picture here */
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.contact-form h2 {
+  font-family: 'Playfair Display', serif;
+  color: #800000;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #d4a373;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #800000;
+}
+
+.contact-form button {
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: #800000;
+  color: white;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #a52a2a;
+}
